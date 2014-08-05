@@ -1,0 +1,29 @@
+{
+  "name": "sortedindex-compare",
+  "version": "0.0.1",
+  "description": "A fork of underscore/lodash.sortedIndex to use a comparison function instead of a ranking function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:6wunderkinder/sortedindex-compare.git"
+  },
+  "keywords": [
+    "underscore",
+    "sortedIndex",
+    "compare",
+    "comparator",
+    "comparison"
+  ],
+  "author": "Bruno Windels <bruno.windels@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/6wunderkinder/sortedindex-compare/issues"
+  },
+  "homepage": "https://github.com/6wunderkinder/sortedindex-compare",
+  "devDependencies": {
+    "nodeunit": "^0.9.0"
+  }
+}
