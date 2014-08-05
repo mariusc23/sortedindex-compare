@@ -55,5 +55,24 @@ module.exports = {
 		test.strictEqual(index, 2, 'value already present should inserted before present value');
 
 		test.done();
+	},
+
+	'test copying items over to a new array': function(test) {
+		function compare(a, b) {
+			return b - a;
+		}
+
+		var values = [5,80,9,4,52,500,1,5,61,7];
+		var expectedValues = [1,4,5,5,7,9,52,61,80,500];
+		var newValues = [];
+
+		values.forEach(function(value) {
+			var index = sortedIndex(newValues, value, compare);
+			newValues.splice(index, 0, value);
+		});
+
+		test.deepEqual(newValues, expectedValues, 'values should be sorted ascendingly');
+
+		test.done();
 	}
 };
