@@ -1,0 +1,8 @@
+{
+  "name": "sorted-index-compare",
+  "version": "0.0.1",
+  "main": [
+    "./index.js"
+  ],
+  "description": "A fork of underscore/lodash.sortedIndex to use a comparison function instead of a ranking function."
+}
